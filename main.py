@@ -30,8 +30,7 @@ for email in email_addys["emails"]:
     content = Content(MimeType.html, base_email)
     mail = Mail(from_email, to_email, subject, content)
     response = sg.client.mail.send.post(request_body=mail.get())
-    print(response.status_code)
-    print(f"---> Sent the email to {email}")
+    print(f"---> Sent the email to {email}, with a status code of {response.status_code}")
 
 # The statements below can be included for debugging purposes
 #print(response.status_code)
