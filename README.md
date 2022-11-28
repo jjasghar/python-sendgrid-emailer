@@ -3,6 +3,24 @@
 ## Scope
 This is a simple script to run an email [base.html](./base.html) through Sendgrid.
 
-You need to add a list of emails (internal), if you would like to send it as "jjasghar@gmail.com" not you will be tagged as EXTERNAL.
+## Usage
 
-But as long as you send only "@ibm.com" emails from "jja@ibm.com" you WILL NOT be EXTERNAL.
+- Add the `api_key` for SendGrid in the [config.toml](./config.toml)
+- Add the email addresses to [email_addys.yaml](./email_addys.yaml)
+- Run `python main.py`
+
+```text
+Copyright:: 2022- IBM, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
